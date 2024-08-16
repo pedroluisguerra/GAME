@@ -70,3 +70,9 @@ def find_streak(list, needle, n):
    else:
         # para valores de n < 0, no tiene sentido
         return False
+   
+def first_elements(list_of_lists):
+   '''
+   Recice una lista de listas y devuelve una lista con los priemros elementos de cada lista
+   '''
+   return list(map(lambda x: x[0], list_of_lists))

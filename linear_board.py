@@ -8,6 +8,14 @@ class LinearBoard:
     o otro jugador
     None un espacio vacío
     '''
+    @classmethod
+
+    def fromList(cls, list):
+        '''No detecta longitud de la lista, Fernando dejó de tarea concretar eso en el video "Test de Victoria Refactorizados min 8:30'''
+        board = cls()
+        board._column = list
+        return board
+    
     def __init__(self):
         '''
         Una lista None
